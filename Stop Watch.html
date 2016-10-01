@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title id="timeTitle">
+			0 - Stop Watch
+		</title>
+				<script src="js.js">
+		</script>
+		<link href="css.css" rel="stylesheet">
+		</link>
+		<noscript>
+			<h>Please Enable Javascript Then Refresh</h>
+			<style>
+							body {
+					margin: 10000px;
+					background-color: black;
+					overflow: hidden;
+				}
+
+				h {
+				color: red;
+				font-size: 150px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				}
+			</style>
+			
+		</noscript>
+
+	</head>
+	<body>
+		<center>
+			<p id="timeDisplay" class="text big outragesLessMargin">0:00:00.00</p>
+			<p id="timeDisplayLap" class="text medium noMargin">0:00:00.00</p>
+			<button onclick="startTimer();" class="btn">Start Timer</button>
+			<button onclick="stopTime();" class="btn">Stop Timer</button>
+			<button onclick="clearTime();" class="btn" id="clear2">Clear All</button>
+			<button onclick="lap();" id="lap-btn" class="btn" style="visibility: hidden;">Set Lap</button>
+		</center>
+		<center>
+			<div id="lapArea" class="laps">
+
+			</div>
+		</center>
+	</body>
+</html>

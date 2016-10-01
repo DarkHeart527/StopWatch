@@ -1,0 +1,49 @@
+
+						.btn {
+			width: 53px;
+			height: 50px;
+			background-color: lightblue;
+			color: blue;
+			border-color: blue;
+			border-width: 5px;
+			border-radius: 10px;
+		}				
+		* {
+				overflow: hidden;
+				}
+		.big {
+			font-size: 150px;
+		}
+		.medium {
+			font-size: 75px;
+		}
+		.text {
+			
+		}
+		.noMargin {
+			margin: 0px;
+		}
+		.laps {
+			overflow-y: scroll;
+			overflow-x: hidden;
+			width: 250px;
+			height: 150px;
+			background-color: lightblue;
+			color: blue;
+		}
+		.inText {
+			width: 550px;
+			height: 15px;
+		}
+		.lessMargin {
+			margin: -10px;
+		}
+		.evenLessMArgin {
+			margin: -20px;
+		}
+		.crazyLessMargin {
+			margin: -30px;
+		}
+		.outragesLessMargin {
+			margin: -35px;
+		}
