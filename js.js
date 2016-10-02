@@ -22,7 +22,11 @@
 			var hoursLap = 0;
 			
 			//Scripts
-			
+
+			function saver(Storage) {
+				 localStorage.currentTimeDATA = currentTime;
+			        }
+
 			function updater2Lap() {
 				if (hoursLap < 10) {
 				 numberHLap = 0;
@@ -335,4 +339,6 @@
 				
 			}
 			
-			startUp();
+			function load() {
+			 currentTime = Number(localStorage.currentTimeDATA)	
+			}
