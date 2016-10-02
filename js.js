@@ -2,6 +2,7 @@
 			//Variables
 		
 			var currentTime = 0;
+			var clearScore = 1;
 			var number = '';
 			var numberS = '';
 			var numberM = '';
@@ -61,6 +62,11 @@
 			}
 			
 			function updater2() {
+				
+				if (clearScore == 1) {
+				  document.getElementById('clear2').style = "visibility: hidden"
+				}
+			
 				if (hours < 10) {
 				 numberH = 0;
 				} else {
@@ -299,6 +305,9 @@
 				clearInterval(interval);
 				interval = setInterval( function() { addTime(); }, 10)
 				document.getElementById('lap-btn').style = "visibility: visible";
+				document.getElementById('stopT').style = "visibility: visible";
+				document.getElementById('startT').style = "visibility: hidden";
+				clearScore = 0;
 			}
 			
 			function addTime() {
@@ -310,6 +319,8 @@
 				clearInterval(interval);
 				document.getElementById('clear2').style = "visibility: visible";
 				document.getElementById('lap-btn').style = "visibility: hidden";
+				document.getElementById('stopT').style = "visibility: hidden";
+				document.getElementById('startT').style = "visibility: visible";
 			}
 			function clearTime() {
 				clearInterval(interval);
@@ -323,6 +334,7 @@
 				hoursLap = 0;
 				lapNum = 0;
 				document.getElementById('lapArea').innerHTML = "";
+				clearScore = 1;
 			}
 			function lap() {
 				lapNum = lapNum + 1;
