@@ -396,7 +396,7 @@
 			 if(deleteWhat == "all") {
 			  document.getElementById('lapArea').innerHTML = '';
 			  localStorage.setItem("lapAreaDATA", '');
-			  alert('Cleared All Laps And Lap Data')
+			  alert('Cleared All Laps And Lap Data');
 			 }
 			 if(deleteWhat == "none") {
 			  alert('Please Select An Option');
