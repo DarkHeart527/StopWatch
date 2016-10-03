@@ -293,7 +293,7 @@
 			}
 			
 			function updateTimer() {
-				deleteWhat = document.getElementById('deletionOfLaps').value;
+				//deleteWhat = document.getElementById('deletionOfLaps').value;
 				document.getElementById('timeTitle').innerHTML = numberH + hours + ":" + numberM + minutes + ":" + numberS + seconds + "." + number + currentTime + " - Stop Watch";
 				document.getElementById('timeDisplay').innerHTML = numberH + hours + ":" + numberM + minutes + ":" + numberS + seconds + "." + number + currentTime;
 				document.getElementById('timeDisplayLap').innerHTML = numberHLap + hoursLap + ":" + numberMLap + minutesLap + ":" + numberSLap + secondsLap + "." + numberLap + currentTimeLap;
@@ -309,7 +309,7 @@
 			
 			function startTimer() {
 				clearInterval(interval);
-				interval = setInterval( function() { addTime(); }, 10)
+				interval = setInterval( function() { addTime(); }, 10);
 				document.getElementById('lap-btn').style = "visibility: visible";
 				document.getElementById('stopT').style = "visibility: visible";
 				document.getElementById('startT').style = "visibility: hidden";
