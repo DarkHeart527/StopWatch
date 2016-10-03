@@ -23,6 +23,8 @@
 			var minutesLap = 0;
 			var hoursLap = 0;
 			
+			var firstTime = null;
+
 			//Scripts
 
 
@@ -305,6 +307,13 @@
 				setInterval( function() { updateTimer(); });
 				setInterval( function() { updater2(); });
 				setInterval( function() { updater2Lap(); });
+				if (firstTime == null) {
+				 clear();
+				 setTimeout( function() { alert('Welcome New Comer'); }, 500);
+				 firstTime = 1;
+				} else if(firstTime == 1) {
+				 alert('Welcome Back');	
+				}
 			}
 			
 			function startTimer() {
