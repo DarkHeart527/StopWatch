@@ -308,10 +308,11 @@
 				setInterval( function() { updater2(); });
 				setInterval( function() { updater2Lap(); });
 				if (firstTime == null) {
-				 clear();
+				 clearTime();
 				 setTimeout( function() { alert('Welcome New Comer'); }, 500);
-				 firstTime = 1;
-				} else if(firstTime == 1) {
+				 firstTime = 2;
+				} 
+				if (firstTime == 2) {
 				 alert('Welcome Back');	
 				}
 			}
