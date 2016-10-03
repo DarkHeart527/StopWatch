@@ -307,14 +307,14 @@
 				setInterval( function() { updateTimer(); });
 				setInterval( function() { updater2(); });
 				setInterval( function() { updater2Lap(); });
-				if (firstTime2 == null) {
+				/*if (firstTime2 == null) {
 				 clearTime();
 				 setTimeout( function() { alert('Welcome New Comer'); }, 500);
 				 firstTime2 = 2;
 				} 
 				if (firstTime2 == 2) {
 				 alert('Welcome Back');	
-				}
+				}*/
 			}
 			
 			function startTimer() {
