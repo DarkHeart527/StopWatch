@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title id="timeTitle">
-			0 - Stop Watch
+			00:00:00.00 - Stop Watch
 		</title>
 				<script src="js.js">
 		</script>
@@ -28,19 +28,26 @@
 		</noscript>
 
 	</head>
-	<body onLoad="load();setInterval( function() { saver(Storage) })">
+	<body onLoad="load();setInterval( function() { saver() }, 10)">
 		<center>
-			<p id="timeDisplay" class="text big outragesLessMargin">0:00:00.00</p>
-			<p id="timeDisplayLap" class="text medium noMargin">0:00:00.00</p>
-			<button onclick="startTimer();" class="btn">Start Timer</button>
-			<button onclick="stopTime();" class="btn">Stop Timer</button>
-			<button onclick="clearTime();" class="btn" id="clear2">Clear All</button>
+			<p id="timeDisplay" class="text big outragesLessMargin">00:00:00.00</p>
+			<p id="timeDisplayLap" class="text medium noMargin">00:00:00.00</p>
+			<button onclick="startTimer();" class="btn" id="startT">Start Timer</button>
+			<button onclick="stopTime();" class="btn" style="visibility: hidden" id="stopT">Stop Timer</button>
+			<button onclick="clearTime();" class="btn" id="clear2" style="visibility: hidden">Clear All</button>
 			<button onclick="lap();" id="lap-btn" class="btn" style="visibility: hidden;">Set Lap</button>
 		</center>
 		<center>
 			<div id="lapArea" class="laps">
 
 			</div>
+		</center>
+		<center>
+			<select id="deletionOfLaps">
+				<option value="none" disabled selected>Select A Time Frame To Delete From Laps</option>
+				<option value="all">ALL</option>
+			</select>
+			<button onClick="deleteLaps();">Accept</button>
 		</center>
 	</body>
 </html>
