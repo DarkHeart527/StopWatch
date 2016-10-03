@@ -26,7 +26,6 @@
 			//Scripts
 
 
-
 			function updater2Lap() {
 				if (hoursLap < 10) {
 				 numberHLap = 0;
