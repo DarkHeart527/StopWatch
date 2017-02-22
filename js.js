@@ -33,7 +33,7 @@
 
 			} else {
 			 localStorage.setItem("FirstTimeHere101",  "Nope");
-			 setTimeout(function() {clearTime()}, 1500);
+			 clearTime();
 			}
 
 			function updater2Lap() {
