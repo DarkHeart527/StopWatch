@@ -29,6 +29,13 @@
 
 
 
+			if (localStorage.FirstTimeHere101 == "Nope") {
+
+			} else {
+			 localStorage.setItem("FirstTimeHere101",  "Nope");
+			 setTimeout(function() {clearTime()}, 1500);
+			}
+
 			function updater2Lap() {
 				if (hoursLap < 10) {
 				 numberHLap = 0;
@@ -107,190 +114,6 @@
 				if (minutes > 59) {
 				 minutes = minutes - 60;
 				 hours = hours + 1;
-				}
-				
-				if (seconds == 0) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}
-				if (seconds == 1) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}				
-				if (seconds == 2) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}				
-				if (seconds == 3) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}				
-				if (seconds == 4) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}				
-				if (seconds == 5) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}				
-				if (seconds == 6) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}				
-				if (seconds == 7) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}				
-				if (seconds == 8) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}				
-				if (seconds == 9) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}				
-				if (seconds == 10) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}				
-				if (seconds == 11) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}				
-				if (seconds == 12) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}				
-				if (seconds == 13) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}				
-				if (seconds == 14) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}				
-				if (seconds == 15) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}				
-				if (seconds == 16) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}				
-				if (seconds == 17) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}				
-				if (seconds == 18) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}				
-				if (seconds == 19) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}				
-				if (seconds == 20) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}				
-				if (seconds == 21) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}				
-				if (seconds == 22) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}			
-				if (seconds == 23) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}				
-				if (seconds == 24) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}				
-				if (seconds == 25) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}				
-				if (seconds == 26) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}				
-				if (seconds == 27) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}				
-				if (seconds == 28) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}				
-				if (seconds == 29) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}				
-				if (seconds == 30) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}				
-				if (seconds == 31) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}				
-				if (seconds == 32) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}				
-				if (seconds == 33) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}				
-				if (seconds == 34) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}				
-				if (seconds == 35) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}				
-				if (seconds == 36) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}				
-				if (seconds == 37) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}				
-				if (seconds == 38) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}
-				if (seconds == 39) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}				
-				if (seconds == 40) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}				
-				if (seconds == 41) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}				
-				if (seconds == 42) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}
-				if (seconds == 43) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}
-				if (seconds == 44) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}
-				if (seconds == 45) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}
-				if (seconds == 46) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}
-				if (seconds == 47) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}
-				if (seconds == 48) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}
-				if (seconds == 49) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}
-				if (seconds == 50) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}
-				if (seconds == 51) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}
-				if (seconds == 52) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}
-				if (seconds == 53) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}
-				if (seconds == 54) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}
-				if (seconds == 55) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}
-				if (seconds == 56) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}
-				if (seconds == 57) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}
-				if (seconds == 58) {
-				 document.getElementById('timeDisplay').style = "color: blue"
-				}
-				if (seconds == 59) {
-				 document.getElementById('timeDisplay').style = "color: red"
-				}
-				if (seconds == 60) {
-				 document.getElementById('timeDisplay').style = "color: blue"
 				}
 			}
 			
