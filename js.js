@@ -119,7 +119,6 @@
 			
 			function updateTimer() {
 				deleteWhat = document.getElementById('deletionOfLaps').value;
-				document.getElementById('timeTitle').innerHTML = numberH + hours + ":" + numberM + minutes + ":" + numberS + seconds + "." + number + currentTime + " - Stop Watch";
 				document.getElementById('timeDisplay').innerHTML = numberH + hours + ":" + numberM + minutes + ":" + numberS + seconds + "." + number + currentTime;
 				document.getElementById('timeDisplayLap').innerHTML = numberHLap + hoursLap + ":" + numberMLap + minutesLap + ":" + numberSLap + secondsLap + "." + numberLap + currentTimeLap;
 			}
@@ -130,6 +129,8 @@
 				setInterval( function() { updateTimer(); });
 				setInterval( function() { updater2(); });
 				setInterval( function() { updater2Lap(); });
+				setInterval( function() {
+				document.getElementById('timeTitle').innerHTML = numberH + hours + ":" + numberM + minutes + ":" + numberS + seconds + "." + number + currentTime + " - Stop Watch";}. 500);
 				/*if (firstTime2 == null) {
 				 clearTime();
 				 setTimeout( function() { alert('Welcome New Comer'); }, 500);
